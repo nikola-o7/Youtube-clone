@@ -1,0 +1,244 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    
+}
+
+/* start of presets */
+
+:root {
+    --navbar-clr: #212121fa;
+    --sidebar-clr: #202020;
+    --sidebar-clr-hover: #535050;
+
+    --scrollbar-clr: #b1a6a6;
+    --scrollbar-clr-hover: #807979;
+
+    --body-clr: #181818;
+
+    --input-clr: #121212;
+    --btn-clr: #ffffff14;
+
+    --border-clr: #303030;
+}
+
+body {
+    background-color: var(--body-clr);
+    height: 1350px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-clr);
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-clr-hover);
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link {
+    color: white;
+}
+
+.open-sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.open-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-clr);
+    border-radius: 6px;
+}
+
+.open-sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-clr-hover);
+    border-radius: 6px;
+}
+
+/* end of presets */
+
+
+/*  start of navbar */
+.navbar {
+    height: 56px;
+    width: 100%;
+    background-color: var(--navbar-clr);
+    display: flex;
+    position: fixed;
+    padding-right: 16px;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+}
+
+.btn-toggle-nav {
+    width: 72px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    user-select: none;
+}
+
+.button {
+    margin-top: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.nav-youtube-homepage {
+    width: 120px;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 16px;
+    user-select: none;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar::before {
+    content: "";
+    position: absolute;
+    display: none;
+    height: 40px;
+    margin-top: 8px;
+    width: 35px;
+    transform: translateX(-35px);
+    background-image: url(/icons/search/searchbar.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--input-clr);
+    user-select: none;
+}
+
+input {
+    margin-top: 8px;
+    padding-left: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: var(--input-clr);
+    border: 1px solid var(--border-clr);
+    max-width: 100%;
+    width: 525px;
+    height: 40px;
+    align-items: center;
+    outline: none;
+}
+
+
+
+.btn-search {
+    background-image: url(/icons/search/searchbar.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--btn-clr);
+    margin-top: 8px;
+    width: 64px;
+    height: 40px;
+    border: 1px solid var(--border-clr);
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-search:hover + .search {
+    visibility: visible;
+    transition: ease;
+    transition-delay: 200ms;
+    
+}
+
+.search {  
+    top: 70px;
+    right: 58px;
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    height: 40px;
+    width: 50px;
+    color: white;
+    background-color: var(--scrollbar-clr-hover);
+    opacity: .9;
+    user-select: none;
+    visibility: hidden;
+}
+
+.voice-search {
+    margin-top: 8px;
+    position: relative;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-clr);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-with-voice {
+    color: white;
+    position: relative;
+    top: 65px;
+    right: 120px;
+    padding: 5px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    height: 40px;
+    background-color: var(--scrollbar-clr-hover);
+    opacity: .9;
+    user-select: none;
+    visibility: hidden;
+}
+
+.voice-search:hover + .search-with-voice {
+    visibility: visible;
+    transition: ease;
+    transition-delay: 200ms;
+}
+
+.right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 8px;
+}
+
+
+.user {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8ac5c5b2;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    user-select: none;
+}
+
