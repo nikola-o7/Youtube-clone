@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', 'Noto', sans-serif;
-    
+
 }
 
 /* start of presets */
@@ -82,7 +82,7 @@ a:link {
     justify-content: space-between;
 }
 
-.left {
+.left-side {
     display: flex;
 }
 
@@ -111,8 +111,12 @@ a:link {
 
 .search-bar {
     display: flex;
+    flex: 0 1 728px;
+    min-width: 0;
+
 }
 
+/* 
 .search-bar::before {
     content: "";
     position: absolute;
@@ -127,7 +131,9 @@ a:link {
     background-position: center;
     background-color: var(--input-clr);
     user-select: none;
-}
+} */
+
+
 
 input {
     margin-top: 8px;
@@ -138,13 +144,12 @@ input {
     line-height: 24px;
     background-color: var(--input-clr);
     border: 1px solid var(--border-clr);
-    max-width: 100%;
-    width: 525px;
     height: 40px;
+    width: 100%;
+    max-width: 100%;
     align-items: center;
     outline: none;
 }
-
 
 
 .btn-search {
@@ -154,29 +159,29 @@ input {
     background-position: center;
     background-color: var(--btn-clr);
     margin-top: 8px;
-    width: 64px;
+    width: 85px;
     height: 40px;
     border: 1px solid var(--border-clr);
     cursor: pointer;
     user-select: none;
 }
 
-.btn-search:hover + .search {
+.btn-search:hover+.search {
     visibility: visible;
     transition: ease;
     transition-delay: 200ms;
-    
+
 }
 
-.search {  
+.search {
     top: 70px;
-    right: 58px;
+    right: 62px;
     position: relative;
     line-height: 40px;
     text-align: center;
     font-size: 12px;
     height: 40px;
-    width: 50px;
+    width: 70px;
     color: white;
     background-color: var(--scrollbar-clr-hover);
     opacity: .9;
@@ -186,8 +191,8 @@ input {
 
 .voice-search {
     margin-top: 8px;
+    right: 50px;
     position: relative;
-    right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,44 +206,80 @@ input {
 
 .search-with-voice {
     color: white;
-    position: relative;
-    top: 65px;
-    right: 120px;
-    padding: 5px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 12px;
+    position: absolute;
     height: 40px;
+    padding: 5px;
+    top: 65px;
+    right: 570px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
     background-color: var(--scrollbar-clr-hover);
     opacity: .9;
     user-select: none;
     visibility: hidden;
 }
 
-.voice-search:hover + .search-with-voice {
-    visibility: visible;
-    transition: ease;
-    transition-delay: 200ms;
-}
 
-.right ul {
+.right-side {
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style-type: none;
-    padding: 8px;
+    padding-right: 15px;
+    user-select: none;
+    max-width: 100%;
 }
 
+.create {
+    margin-top: 5px;
+    padding-right: 25px;
+}
+
+.create-text {
+    top: 65px;
+    right: 127px;
+    padding: 5px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: var(--scrollbar-clr-hover);
+    opacity: .9;
+    user-select: none;
+    position: absolute;
+    color: white;
+    visibility: hidden;
+}
+
+.notifications {
+    padding-right: 25px;
+    margin-top: 3px;
+}
+
+.notifications-text {
+    top: 65px;
+    right: 60px;
+    padding: 5px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: var(--scrollbar-clr-hover);
+    opacity: .9;
+    user-select: none;
+    position: absolute;
+    color: white;
+    visibility: hidden;
+}
 
 .user {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #8ac5c5b2;
-    width: 32px;
+    background-color: #4975c7;
     height: 32px;
+    width: 32px;
     border-radius: 50%;
-    user-select: none;
-}
+    text-align: center;
+    line-height: 35px;
+    font-weight: 400;
+    color: white;
 
+}
