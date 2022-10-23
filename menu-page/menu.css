@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", "Noto", sans-serif;
+}
+
+:root {
+  --navbar-clr: #212121fa;
+  --sidebar-clr: #202020;
+  --sidebar-clr-hover: #535050;
+
+  --scrollbar-clr: #b1a6a6;
+  --scrollbar-clr-hover: #807979;
+
+  --body-clr: #181818;
+
+  --input-clr: #121212;
+  --btn-clr: #ffffff14;
+
+  --border-clr: #303030;
+}
+
+/*    presets        */ 
+
+/* main-menu-closed style - start */
+.main-menu-closed {
+  background-color: var(--navbar-clr);
+  width: 72px;
+  height: 100%;
+  top: 55px;
+  position: fixed;
+  display: inline-block;
+}
+
+.menu-home {
+  width: 72px;
+  padding: 16px 0 14px;
+  outline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home {
+  max-width: 100%;
+  display: block;
+  margin-top: 6px;
+  font-size: 0.6rem;
+  color: white;
+}
+
+.menu-home:hover {
+  background-color: var(--sidebar-clr-hover);
+  background-image: url(/icons/nav-icons-left-closed/home2.png);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 18px;
+  cursor: pointer;
+}
+
+.explore {
+  width: 72px;
+  padding: 16px 0 14px;
+  outline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore:hover {
+  background-color: var(--sidebar-clr-hover);
+  cursor: pointer;
+}
+
+.shorts {
+  width: 72px;
+  padding: 16px 0 14px;
+  outline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shorts:hover {
+  background-color: var(--sidebar-clr-hover);
+  cursor: pointer;
+}
+
+.subscriptions {
+  width: 72px;
+  padding: 16px 0 14px;
+  outline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscriptions:hover {
+  background-color: var(--sidebar-clr-hover);
+  cursor: pointer;
+}
+
+.library {
+  width: 72px;
+  padding: 16px 0 14px;
+  outline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.library:hover {
+  background-color: var(--sidebar-clr-hover);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .main-menu-closed {
+    display: none;
+  }
+}
+
+/* main-menu-closed style - end */
+
+/* start of open style menu  */
+
+
+.library {
+  width: 100px;
+}
+
+/* end of open style menu  */
