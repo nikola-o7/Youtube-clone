@@ -1,11 +1,21 @@
 const BTN_SEARCH = document.querySelector(".btn-search");
 const BTN_SEARCH_POPUP = document.querySelector(".search");
+
 const MICROPHONE = document.querySelector(".microphone");
 const SEARCH_WITH_VOICE = document.querySelector(".search-with-voice");
+
 const CREATE = document.querySelector(".create");
 const CREATE_TEXT = document.querySelector(".create-text");
+
 const NOTIFICATIONS = document.querySelector(".notifications");
 const NOTIFICATIONS_TEXT = document.querySelector(".notifications-text");
+
+const SHOW_CREATE_MENU = document.querySelector(".create");
+const HIDE_CREATE_MENU = document.querySelector(".create-menu");
+
+
+
+
 
 MICROPHONE.addEventListener("mouseover", () => {
   SEARCH_WITH_VOICE.style.visibility = "visible";
@@ -34,3 +44,14 @@ NOTIFICATIONS.addEventListener("mouseover", () => {
 NOTIFICATIONS.addEventListener("mouseout", () => {
   NOTIFICATIONS_TEXT.style.visibility = "hidden";
 });
+
+
+SHOW_CREATE_MENU.addEventListener("click", () => {
+  if (HIDE_CREATE_MENU.style.visibility === "hidden") {
+    HIDE_CREATE_MENU.style.visibility = "visible"
+  } else {
+    HIDE_CREATE_MENU.style.visibility = "hidden"
+  };
+});
+
+

@@ -9,6 +9,7 @@
   <title>YouTube</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="/menu-page/menu.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -18,30 +19,35 @@
         <img src="icons/nav-icons-left-closed/list.png" class="button" width="24px" height="24px" alt="" />
       </div>
 
-      <div class="main-menu-closed">
+      <div title="Home" class="main-menu-closed">
         <div class="menu-home">
           <img src="/icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px" />
           <span class="home">Home</span>
         </div>
-        <div class="explore">
-          <img src="/icons/nav-icons-left-closed/explore.png" alt="" height="22px" width="22px" />
-          <span class="home">Explore</span>
-        </div>
-        <div class="shorts">
+        <div title="Shorts" class="shorts">
           <img src="/icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px" />
           <span class="home">Shorts</span>
         </div>
-        <div class="subscriptions">
+        <div title="Subscriptions" class="subscriptions">
           <img src="/icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px" width="22px" />
           <span class="home">Subscriptions</span>
         </div>
-        <div class="library">
+        <div title="Library" class="library">
           <img src="/icons/nav-icons-left-closed/library.png" alt="" height="22px" width="22px" />
           <span class="home">Library</span>
         </div>
       </div>
 
-      <div class="nav-youtube-homepage">
+      <!-- <div class="main-menu-open">
+        <ul class="open-menu">
+          <li><a><img src="/icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px"></a></li>
+          <li><a><img src="/icons/nav-icons-left-closed/explore.png" alt="" height="22px" width="22px" /></a></li>
+          <li><a><img src="/icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px" /></a></li>
+          <li><a><img src="/icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px" width="22px" /></a></li>
+        </ul>
+      </div> -->
+
+      <div title="YouTube Home" class="nav-youtube-homepage">
         <a href="ytdark.html">
           <img src="icons/nav-icons-left-closed/homepage.png" class="youtube-homepage-icon" alt="" />
         </a>
@@ -64,8 +70,18 @@
 
     <div class="right-side">
       <div class="create">
-        <img src="icons/nav-icons-right/create.png" alt="" height="24px" width="24px" />
+        <img id="image" src="icons/nav-icons-right/create.png" alt=""  />
         <div class="create-text">Create</div>
+        <div class="create-menu">
+          <div class="upload-video">
+            <img src="icons/nav-icons-right/youtube-apps/uploadvideo.png" alt="" height="24px" width="24px" />
+            <span>Upload Video</span>
+          </div>
+          <div class="go-live">
+            <img src="icons/nav-icons-right/youtube-apps/golive.png" alt="" height="24px" width="24px" />
+            <span>Go Live</span>
+          </div>
+        </div>
       </div>
 
       <div class="notifications">
@@ -76,7 +92,6 @@
     </div>
   </nav>
 
-  <script src="script.js"></script>
 </body>
 
 </html>

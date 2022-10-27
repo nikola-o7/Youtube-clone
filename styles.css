@@ -10,19 +10,20 @@
 /* start of presets */
 
 :root {
-  --navbar-clr: #212121fa;
+  --navbar-clr: #0f0f0f;
   --sidebar-clr: #202020;
   --sidebar-clr-hover: #535050;
 
   --scrollbar-clr: #b1a6a6;
   --scrollbar-clr-hover: #807979;
 
-  --body-clr: #181818;
+  --body-clr: #0f0f0f;
 
   --input-clr: #121212;
   --btn-clr: #ffffff14;
 
   --border-clr: #303030;
+
 }
 
 body {
@@ -105,13 +106,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 input[type="text"] {
   margin-top: 8px;
-  padding-left: 5px;
+  padding-left: 15px;
   color: white;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   background-color: var(--input-clr);
   border: 1px solid var(--border-clr);
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   height: 40px;
   width: 100%;
   max-width: 100%;
@@ -125,6 +129,8 @@ input[type="text"] {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--btn-clr);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   margin-top: 8px;
   width: 85px;
   max-width: 100%;
@@ -162,12 +168,16 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--input-clr);
+  background-color: var(--sidebar-clr);
   height: 40px;
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
   user-select: none;
+}
+
+.microphone:hover {
+  background-color: var(--sidebar-clr-hover);
 }
 
 .search-with-voice {
@@ -188,7 +198,7 @@ input[type="text"] {
 
 .right-side {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   padding-right: 15px;
@@ -197,17 +207,32 @@ input[type="text"] {
 }
 
 .create {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
   margin-top: 5px;
   cursor: pointer;
 }
 
+.create > img {
+  height: 24px;
+  width: 24px;
+}
+
+.create:hover {
+  background-color: var(--sidebar-clr-hover);
+  border-radius: 50%;
+}
+
 .create-text {
   top: 65px;
-  right: 127px;
-  padding: 5px;
   height: 40px;
+  padding: 8px;
   text-align: center;
-  line-height: 30px;
+  line-height: 26px;
   font-size: 12px;
   background-color: var(--scrollbar-clr-hover);
   opacity: 0.9;
@@ -217,9 +242,62 @@ input[type="text"] {
   visibility: hidden;
 }
 
+.create-menu {
+  position: absolute;
+  flex-direction: column;
+  top: 45px;
+  right: -125px;
+  width: 170px;
+  padding: 5px;
+  background-color: var(--border-clr);
+  border-radius: 10px;
+  color: white;
+  visibility: hidden;
+}
+
+.upload-video {
+  display: flex;
+  padding: 10px;
+}
+
+.upload-video > span {
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+.upload-video:hover {
+  background-color: var(--sidebar-clr-hover);
+  border-radius: 10px;
+}
+
+.go-live {
+  display: flex;
+  padding: 10px;
+}
+
+.go-live > span {
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+.go-live:hover {
+  background-color: var(--sidebar-clr-hover);
+  border-radius: 10px;
+}
+
 .notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
   margin-top: 3px;
   cursor: pointer;
+}
+
+.notifications:hover {
+  background-color: var(--sidebar-clr-hover);
+  border-radius: 50%;
 }
 
 .notifications-text {
@@ -250,7 +328,7 @@ input[type="text"] {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 45em) {
   input[type="text"] {
     display: none;
   }
@@ -267,6 +345,11 @@ input[type="text"] {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+  }
+
+  .btn-search:hover {
+    background-color: var(--sidebar-clr-hover);
+    border-radius: 50%;
   }
 
   .microphone {
