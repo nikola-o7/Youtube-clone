@@ -23,9 +23,43 @@
   --border-clr: #303030;
 }
 
+body {
+  background-color: var(--body-clr);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-clr);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-clr-hover);
+  border-radius: 6px;
+}
+
+.main-menu-open::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main-menu-open::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-clr);
+  border-radius: 6px;
+}
+
+.main-menu-open::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-clr-hover);
+  border-radius: 6px;
+}
+
+
+
 /*    presets        */
 
-/* main-menu-closed style - start */
+/* main-menu-closed  - start */
 .main-menu-closed {
   background-color: var(--navbar-clr);
   width: 72px;
@@ -33,7 +67,7 @@
   top: 55px;
   position: fixed;
   display: inline-block;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .menu-home {
@@ -114,20 +148,116 @@
   cursor: pointer;
 }
 
-@media (max-width: 45em) {
-  .main-menu-closed {
-    display: none;
-  }
+/* main-menu-closed  - end */
+
+
+/* start of open  menu  */
+
+.main-menu-open {
+  display: block;
+  position: fixed;
+  top: 55px;
+  width: 240px;
+  max-height: calc(100% - 56px);
+  user-select: none;
+  overflow-y: scroll;
+  /* border: 1px solid red; */
 }
 
-/* main-menu-closed style - end */
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 17px;
+  font-size: 0.9rem;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
+.column::after {
+  content: '';
+  padding: 5px;
+  border-bottom: 1px solid var(--border-clr);
+}
 
-/* start of open style menu  */
+.menu-open-home {
+  padding: 5px;
+}
 
-/* end of open style menu  */
+.menu-open-image {
+  margin: 5px 24px 5px 7px;
+  vertical-align: middle;
+}
+
+.menu-open-home:hover {
+  background-color: var(--sidebar-clr-hover);
+  border-radius: 10px;
+}
+
+.subscribed-channels-title {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 0px 5px 12px;
+}
+
+.explore-channels-title {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 0px 5px 12px;
+}
+
+.more-from-youtube-title {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 0px 5px 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  padding: 16px 24px 0;
+}
+
+.about a {
+  margin-right: 8px;
+  font-size: 0.8rem;
+  color: var(--scrollbar-clr);
+  text-decoration: none;
+}
+
+.terms {
+  padding: 16px 24px 0;
+}
+
+.terms a {
+  margin-right: 4px;
+  font-size: 0.8rem;
+  color: var(--scrollbar-clr);
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  padding: 16px 24px 0;
+  margin-bottom: 12px;
+  color: var(--sidebar-clr-hover);
+}
+
+/* end of open  menu  */
 
 /* carousel menu start */
 
 
 /* carousel menu end */
+
+@media (max-width: 45em) {
+  .main-menu-closed {
+    display: none;
+  }
+}

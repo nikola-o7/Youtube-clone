@@ -9,7 +9,6 @@
   <title>YouTube</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="/menu-page/menu.css" />
-  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -38,17 +37,10 @@
         </div>
       </div>
 
-      <!-- <div class="main-menu-open">
-        <ul class="open-menu">
-          <li><a><img src="/icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px"></a></li>
-          <li><a><img src="/icons/nav-icons-left-closed/explore.png" alt="" height="22px" width="22px" /></a></li>
-          <li><a><img src="/icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px" /></a></li>
-          <li><a><img src="/icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px" width="22px" /></a></li>
-        </ul>
-      </div> -->
+
 
       <div title="YouTube Home" class="nav-youtube-homepage">
-        <a href="ytdark.html">
+        <a href="index.html">
           <img src="icons/nav-icons-left-closed/homepage.png" class="youtube-homepage-icon" alt="" />
         </a>
       </div>
@@ -59,7 +51,21 @@
       <button class="btn-search">
         <div class="search">Search</div>
       </button>
-
+      <div class="voice-menu">
+        <div class="voice-menu-main">
+          <h1>Search with your voice</h1>
+          <div class="close-icon">
+            <img src="icons/search/close.png" alt="" height="18px" width="18px" />
+          </div>
+        </div>
+        <p>
+          To search by voice, go to your browser settings and allow access to
+          microphone
+        </p>
+        <div class="voice-menu-icon">
+          <img src="icons/search/microphone.png" alt="" height="40px" width="40px" />
+        </div>
+      </div>
       <div class="voice-search">
         <div class="microphone">
           <img src="icons/search/microphone.png" alt="" height="24px" width="24px" />
@@ -70,17 +76,17 @@
 
     <div class="right-side">
       <div class="create">
-        <img id="image" src="icons/nav-icons-right/create.png" alt=""  />
+        <img src="icons/nav-icons-right/create.png" alt="" />
         <div class="create-text">Create</div>
-        <div class="create-menu">
-          <div class="upload-video">
-            <img src="icons/nav-icons-right/youtube-apps/uploadvideo.png" alt="" height="24px" width="24px" />
-            <span>Upload Video</span>
-          </div>
-          <div class="go-live">
-            <img src="icons/nav-icons-right/youtube-apps/golive.png" alt="" height="24px" width="24px" />
-            <span>Go Live</span>
-          </div>
+      </div>
+      <div class="create-menu">
+        <div class="upload-video">
+          <img src="icons/nav-icons-right/youtube-apps/uploadvideo.png" alt="" height="24px" width="24px" />
+          <span>Upload Video</span>
+        </div>
+        <div class="go-live">
+          <img src="icons/nav-icons-right/youtube-apps/golive.png" alt="" height="24px" width="24px" />
+          <span>Go Live</span>
         </div>
       </div>
 
@@ -88,10 +94,296 @@
         <img src="icons/nav-icons-right/notifications.png" alt="" height="24px" width="24px" />
         <div class="notifications-text">Notifications</div>
       </div>
+      <div class="notifications-menu">
+        <div class="top">
+          <span>Notifications</span>
+          <img src="icons/nav-icons-right/account-icons/settings.png" alt="" height="32px" width="32px" />
+        </div>
+        <div class="bottom">
+          <img src="icons/nav-icons-right/notifications.png" alt="" height="120px" width="120px" />
+          <h2>Your notifications live here</h2>
+          <p>
+            Subscribe to your favourite channels to get notified about their
+            latest videos.
+          </p>
+        </div>
+      </div>
       <div class="user">U</div>
-    </div>
+      <div class="account-interface">
+        <div class="account-interface-head">
+          <div class="account-icon">U</div>
+          <div class="headline">
+            <span class="user-interface">Username Interface</span>
+            <span style="color: #40a1f0; cursor: pointer; font-size: 0.9rem;">Manage your Google Account</span>
+          </div>
+        </div>
+        <div class="first-interface">
+          <div class="row-1">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/yourAccount.png" alt="" height="26px" width="26px">
+            </div>
+            <span>Your channel</span>
+          </div>
+          <div class="row-1">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/switchAccount.png" alt="" height="26px" width="26px">
+            </div>
+            <span>Switch Account</span>
+            <div class="switch">
+              <img src="icons/subscriptions/showMore.png" alt="" height="18px" width="18px">
+            </div>
+          </div>
+          <div class="row-1">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/signOut.png" alt="" height="26px" width="26px">
+            </div>
+            <span>Sign out</span>
+          </div>
+        </div>
+        <div class="second-interface">
+          <div class="row-2">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/purchasesAndMemberships.png" alt="" height="26px"
+                width="26px">
+            </div>
+            <span>Purchases and Memberships</span>
+          </div>
+          <div class="row-2">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/yourData.png" alt="" height="26px" width="26px">
+            </div>
+            <span>Your data in YouTube</span>
+          </div>
+        </div>
+        <div class="third-interface">
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/appearance.png" alt="" height="27px" width="27px">
+            </div>
+            <span>Appearance: Dark</span>
+            <div class="switch">
+              <img src="icons/subscriptions/showMore.png" alt="" height="18px" width="18px">
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/language.png" alt="" height="27px" width="27px">
+            </div>
+            <span>Language: English</span>
+            <div class="switch">
+              <img src="icons/subscriptions/showMore.png" alt="" height="18px" width="18px">
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/location.png" alt="" height="27px" width="27px">
+            </div>
+            <span>Location: Country</span>
+            <div class="switch">
+              <img src="icons/subscriptions/showMore.png" alt="" height="18px" width="18px">
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/keyboardShortcuts.png" alt="" height="27px" width="27px">
+            </div>
+            <span>Keyboard Shortcuts</span>
+          </div>
+        </div>
+        <div class="settings-interface">
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/settings.png" alt="" height="26px" width="26px">
+            </div>
+            <span>Settings</span>
+          </div>
+        </div>
+        <div class="help-feedback">
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/help.png" alt="" height="28px" width="28px">
+            </div>
+            <span>Help</span>
+          </div>
+          <div class="row-3">
+            <div class="images">
+              <img src="icons/nav-icons-right/account-icons/sendFeedback.png" alt="" height="28px" width="28px">
+            </div>
+            <span>Send Feedback</span>
+          </div>
+        </div>
+      </div>
   </nav>
 
+  <div class="main-menu-open">
+    <div class="column">
+      <div title="Home" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px">
+        <span>Home</span>
+      </div>
+      <div title="Shorts" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px">
+        <span>Shorts</span>
+      </div>
+      <div title="Subscriptions" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px"
+          width="22px">
+        <span>Subscriptions</span>
+      </div>
+    </div>
+    <div class="column">
+      <div title="Library" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-closed/library.png" alt="" height="22px" width="22px">
+        <span>Library</span>
+      </div>
+      <div title="History" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/history.png" alt="" height="22px" width="22px">
+        <span>History</span>
+      </div>
+      <div title="Your Videos" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/yourvideos.png" alt="" height="22px" width="22px">
+        <span>Your Videos</span>
+      </div>
+      <div title="Watch Later" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/watchlater.png" alt="" height="22px" width="22px">
+        <span>Watch Later</span>
+      </div>
+      <div title="Watch Library" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/watchlibrary.png" alt="" height="22px"
+          width="22px">
+        <span>Watch Library</span>
+      </div>
+      <div title="Liked Videos" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/likedvideos.png" alt="" height="22px" width="22px">
+        <span>Liked Videos</span>
+      </div>
+    </div>
+    <div class="column | subscribed-channels">
+      <h1 class="subscribed-channels-title">Subscriptions</h1>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/1.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/2.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/3.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/4.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/5.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/6.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Subscribed Channel" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/7.png" alt="" height="22px" width="22px">
+        <span>Lorem Ipsum</span>
+      </div>
+      <div title="Show more" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/subscriptions/showMore.png" alt="" height="22px" width="22px">
+        <span>Show more</span>
+      </div>
+    </div>
+    <div class="column">
+      <h1 class="explore-channels-title">Explore</h1>
+      <div title="Trending" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/trending.png" alt="" height="22px" width="22px">
+        <span>Trending</span>
+      </div>
+      <div title="Music" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/music.png" alt="" height="22px" width="22px">
+        <span>Music</span>
+      </div>
+      <div title="Gaming" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/gaming.png" alt="" height="22px" width="22px">
+        <span>Gaming</span>
+      </div>
+      <div title="Sports" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/sports.png" alt="" height="22px" width="22px">
+        <span>Sports</span>
+      </div>
+    </div>
+    <div class="column">
+      <h1 class="more-from-youtube-title">More from YouTube</h1>
+      <div title="YouTube Premium" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-right/youtube-apps/youtubePremium.png" alt="" height="22px"
+          width="22px">
+        <span>YouTube Premium</span>
+      </div>
+      <div title="Creator Studio" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/creatorStudio.png" alt="" height="22px"
+          width="22px">
+        <span>Creator Studio</span>
+      </div>
+      <div title="YouTube Music" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/creatorMusic.png" alt="" height="22px"
+          width="22px">
+        <span>YouTube Music</span>
+      </div>
+      <div title="YouTube Kids" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-right/youtube-apps/youtubeKids.png" alt="" height="22px"
+          width="22px">
+        <span>YouTube Kids</span>
+      </div>
+      <div title="YouTube TV" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-right/youtube-apps/youtubeTV.png" alt="" height="22px"
+          width="22px">
+        <span>YouTube TV</span>
+      </div>
+    </div>
+    <div class="column">
+      <div title="Settings" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-left-open/settings.png" alt="" height="22px" width="22px">
+        <span>Settings</span>
+      </div>
+      <div title="Report History" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/video-player-icons/report.png" alt="" height="22px" width="22px">
+        <span>Report History</span>
+      </div>
+      <div title="Help" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-right/account-icons/help.png" alt="" height="22px"
+          width="22px">
+        <span>Help</span>
+      </div>
+      <div title="Send feedback" class="menu-open-home">
+        <img class="menu-open-image" src="/icons/nav-icons-right/account-icons/sendFeedback.png" alt="" height="22px"
+          width="22px">
+        <span>Send feedback</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="about">
+        <a href="#">About</a>
+        <a href="#">Press</a>
+        <a href="#">Copyright</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Creators</a>
+        <a href="#">Advertise</a>
+        <a href="#">Developers</a>
+      </div>
+      <div class="terms">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Policy & Safety</a>
+        <a href="#">How Youtube Works</a>
+        <a href="#">Test New Features</a>
+      </div>
+
+      <div class="copyright">	&#169; 2022 Copyright</div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
