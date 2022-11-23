@@ -56,6 +56,10 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 6px;
 }
 
+img {
+  user-select: none;
+}
+
 /* end of presets */
 
 /*  start of navbar */
@@ -63,11 +67,11 @@ body::-webkit-scrollbar-thumb:hover {
   height: 56px;
   width: 100%;
   background-color: var(--body-clr);
-  opacity: 0.8;
   display: flex;
   position: fixed;
   padding-right: 16px;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .left-side {
@@ -75,17 +79,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .btn-toggle-nav {
-  width: 72px;
-  height: 40px;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   user-select: none;
+  margin: 6px 15px 0 15px;
+  cursor: pointer;
 }
 
-.button {
-  margin-top: 15px;
-  align-items: center;
-  cursor: pointer;
+.btn-toggle-nav:hover {
+  background-color: var(--sidebar-clr-hover);
+  margin: 6px 15px 0 15px;
+  border-radius: 50%;
 }
 
 .nav-youtube-homepage {
@@ -126,10 +133,6 @@ input[type="text"]:focus {
 }
 
 .btn-search {
-  background-image: url(/icons/search/searchbar.png);
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--btn-clr);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -151,11 +154,11 @@ input[type="text"]:focus {
   line-height: 30px;
   font-size: 12px;
   background-color: var(--scrollbar-clr-hover);
-  opacity: 0.9;
   user-select: none;
   position: absolute;
   color: white;
   visibility: hidden;
+  z-index: 1;
 }
 
 .voice-menu {
@@ -166,12 +169,13 @@ input[type="text"]:focus {
   border-radius: 10px;
   height: 416px;
   width: 592px;
-  z-index: 1002;
+  z-index: 1;
   color: white;
   visibility: hidden;
 }
 
 .voice-menu-main {
+  z-index: 1002;
   display: flex;
   justify-content: space-between;
 }
@@ -248,9 +252,9 @@ input[type="text"]:focus {
   line-height: 30px;
   font-size: 12px;
   background-color: var(--scrollbar-clr-hover);
-  opacity: 0.9;
   user-select: none;
   visibility: hidden;
+  z-index: 1;
 }
 
 .right-side {
@@ -292,7 +296,6 @@ input[type="text"]:focus {
   line-height: 26px;
   font-size: 12px;
   background-color: var(--scrollbar-clr-hover);
-  opacity: 0.9;
   user-select: none;
   position: absolute;
   color: white;
@@ -325,6 +328,7 @@ input[type="text"]:focus {
 .upload-video:hover {
   background-color: var(--sidebar-clr-hover);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .go-live {
@@ -340,6 +344,7 @@ input[type="text"]:focus {
 .go-live:hover {
   background-color: var(--sidebar-clr-hover);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .notifications {
@@ -366,7 +371,6 @@ input[type="text"]:focus {
   line-height: 30px;
   font-size: 12px;
   background-color: var(--scrollbar-clr-hover);
-  opacity: 0.9;
   user-select: none;
   position: absolute;
   color: white;
@@ -386,21 +390,25 @@ input[type="text"]:focus {
 
 .top {
   height: 49px;
+  display: flex;
   border-bottom: 1px solid var(--sidebar-clr-hover);
 }
 
 .top>span {
   line-height: 49px;
   padding-left: 10px;
+  flex: 1;
 }
 
-.top>img {
-  margin-top: 7px;
-  margin-right: 5px;
-  float: right;
+.notification-settings {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.top>img:hover {
+.notification-settings:hover {
   background-color: var(--scrollbar-clr-hover);
   border-radius: 50%;
   cursor: pointer;
@@ -589,6 +597,8 @@ input[type="text"]:focus {
   line-height: 30px;
   text-decoration: none;
 }
+
+
 
 /* end of navbar */
 

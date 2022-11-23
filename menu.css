@@ -25,6 +25,7 @@
 
 body {
   background-color: var(--body-clr);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -55,11 +56,13 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 6px;
 }
 
+img {
+  user-select: none;
+}
 
+/* end of presets */
 
-/*    presets        */
-
-/* main-menu-closed  - start */
+/* start of main menu closed */
 .main-menu-closed {
   background-color: var(--navbar-clr);
   width: 72px;
@@ -67,7 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 55px;
   position: fixed;
   display: inline-block;
-  visibility: hidden;
+  display: none;
 }
 
 .menu-home {
@@ -148,12 +151,13 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
 
-/* main-menu-closed  - end */
+/* end of main menu closed */
 
 
 /* start of open  menu  */
 
 .main-menu-open {
+  background-color: var(--body-clr);
   display: block;
   position: fixed;
   top: 55px;
@@ -161,8 +165,8 @@ body::-webkit-scrollbar-thumb:hover {
   max-height: calc(100% - 56px);
   user-select: none;
   overflow-y: scroll;
-  /* border: 1px solid red; */
 }
+
 
 .column {
   display: flex;
@@ -249,15 +253,67 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--sidebar-clr-hover);
 }
 
-/* end of open  menu  */
-
-/* carousel menu start */
+/* end of open menu  */
 
 
-/* carousel menu end */
+/* frequent content that is watched */
+.content-container {
+  background-color: var(--body-clr);
+  position: fixed;
+  display: flex;
+  width: 100%;
+  gap: 0.8rem;
+  padding: 10px;
+  top: 56px;
+  left: 250px;
+  user-select: none;
+  z-index: -1;
+}
+
+.browse-content {
+  background-color: var(--border-clr);
+  max-width: 30rem;
+  padding: 10px;
+  height: 34px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.browse-content:hover {
+  background-color: var(--sidebar-clr-hover);
+}
+
+
+/* grid of recommended videos start */
+
+.wrapper {
+  position: absolute;
+  left: 330px;
+  top: 130px;
+  height: 100%;
+  max-width: 100%;
+  border: 1px solid red;
+  z-index: -2;
+  overflow-y: hidden;
+}
+
+/* grid of recommended videos end */
 
 @media (max-width: 45em) {
   .main-menu-closed {
+    display: none !important;
+  }
+
+  .main-menu-open {
     display: none;
+  }
+  .content-container {
+    left: 0;
   }
 }

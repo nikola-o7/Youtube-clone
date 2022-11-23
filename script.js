@@ -20,7 +20,24 @@ const SHOW_MICROPHONE_MENU = document.querySelector(".voice-search");
 const HIDE_MICROPHONE_MENU = document.querySelector(".voice-menu");
 
 const SHOW_ACCOUNT_INTERFACE = document.querySelector(".user");
-const HIDE_ACCOUNT_INTERFACE =  document.querySelector(".account-interface");
+const HIDE_ACCOUNT_INTERFACE = document.querySelector(".account-interface");
+
+function toggleInterface() {
+  const toggleNav = document.querySelector(".btn-toggle-nav");
+  const OPENED_MENU_INTERFACE = document.querySelector(".main-menu-open");
+  const CLOSED_MENU_INTERFACE = document.querySelector(".main-menu-closed");
+
+  toggleNav.addEventListener("click", () => {
+    if (OPENED_MENU_INTERFACE.style.display === "block") {
+      OPENED_MENU_INTERFACE.style.display = "none",
+        CLOSED_MENU_INTERFACE.style.display = "block";
+    } else {
+      CLOSED_MENU_INTERFACE.style.display = "none";
+      OPENED_MENU_INTERFACE.style.display = "block";
+    }
+  })
+};
+toggleInterface();
 
 BTN_SEARCH.addEventListener("mouseover", () => {
   BTN_SEARCH_POPUP.style.visibility = "visible";
@@ -81,3 +98,4 @@ SHOW_ACCOUNT_INTERFACE.addEventListener("click", () => {
     HIDE_ACCOUNT_INTERFACE.style.visibility = "hidden";
   }
 });
+

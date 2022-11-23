@@ -8,36 +8,205 @@
   <link rel="icon" type="image/png" href="icons/tabIcon.png" />
   <title>YouTube</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="/menu-page/menu.css" />
+  <link rel="stylesheet" href="menu.css" />
 </head>
 
 <body>
   <nav class="navbar">
     <div class="left-side">
       <div class="btn-toggle-nav">
-        <img src="icons/nav-icons-left-closed/list.png" class="button" width="24px" height="24px" alt="" />
+        <img src="icons/nav-icons-left-closed/list.png" width="24px" height="24px" alt="" />
       </div>
 
       <div title="Home" class="main-menu-closed">
         <div class="menu-home">
-          <img src="/icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px" />
+          <img src="icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px" />
           <span class="home">Home</span>
         </div>
         <div title="Shorts" class="shorts">
-          <img src="/icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px" />
+          <img src="icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px" />
           <span class="home">Shorts</span>
         </div>
         <div title="Subscriptions" class="subscriptions">
-          <img src="/icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px" width="22px" />
+          <img src="icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px" width="22px" />
           <span class="home">Subscriptions</span>
         </div>
         <div title="Library" class="library">
-          <img src="/icons/nav-icons-left-closed/library.png" alt="" height="22px" width="22px" />
+          <img src="icons/nav-icons-left-closed/library.png" alt="" height="22px" width="22px" />
           <span class="home">Library</span>
         </div>
       </div>
 
+      <aside class="main-menu-open">
+        <div class="column">
+          <div title="Home" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px">
+            <span>Home</span>
+          </div>
+          <div title="Shorts" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px">
+            <span>Shorts</span>
+          </div>
+          <div title="Subscriptions" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px"
+              width="22px">
+            <span>Subscriptions</span>
+          </div>
+        </div>
+        <section class="column">
+          <div title="Library" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-closed/library.png" alt="" height="22px"
+              width="22px">
+            <span>Library</span>
+          </div>
+          <div title="History" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/history.png" alt="" height="22px" width="22px">
+            <span>History</span>
+          </div>
+          <div title="Your Videos" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/yourvideos.png" alt="" height="22px"
+              width="22px">
+            <span>Your Videos</span>
+          </div>
+          <div title="Watch Later" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/watchlater.png" alt="" height="22px"
+              width="22px">
+            <span>Watch Later</span>
+          </div>
+          <div title="Watch Library" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/watchlibrary.png" alt="" height="22px"
+              width="22px">
+            <span>Watch Library</span>
+          </div>
+          <div title="Liked Videos" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/likedvideos.png" alt="" height="22px"
+              width="22px">
+            <span>Liked Videos</span>
+          </div>
+        </section>
+        <section class="column | subscribed-channels">
+          <h1 class="subscribed-channels-title">Subscriptions</h1>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/1.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/2.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/3.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/4.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/5.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/6.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Subscribed Channel" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/7.png" alt="" height="22px" width="22px">
+            <span>Lorem Ipsum</span>
+          </div>
+          <div title="Show more" class="menu-open-home">
+            <img class="menu-open-image" src="icons/subscriptions/showMore.png" alt="" height="22px" width="22px">
+            <span>Show more</span>
+          </div>
+        </section>
+        <section class="column">
+          <h1 class="explore-channels-title">Explore</h1>
+          <div title="Trending" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/trending.png" alt="" height="22px" width="22px">
+            <span>Trending</span>
+          </div>
+          <div title="Music" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/music.png" alt="" height="22px" width="22px">
+            <span>Music</span>
+          </div>
+          <div title="Gaming" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/gaming.png" alt="" height="22px" width="22px">
+            <span>Gaming</span>
+          </div>
+          <div title="Sports" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/sports.png" alt="" height="22px" width="22px">
+            <span>Sports</span>
+          </div>
+        </section>
+        <section class="column">
+          <h1 class="more-from-youtube-title">More from YouTube</h1>
+          <div title="YouTube Premium" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-right/youtube-apps/youtubePremium.png" alt=""
+              height="22px" width="22px">
+            <span>YouTube Premium</span>
+          </div>
+          <div title="Creator Studio" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/creatorStudio.png" alt="" height="22px"
+              width="22px">
+            <span>Creator Studio</span>
+          </div>
+          <div title="YouTube Music" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/creatorMusic.png" alt="" height="22px"
+              width="22px">
+            <span>YouTube Music</span>
+          </div>
+          <div title="YouTube Kids" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-right/youtube-apps/youtubeKids.png" alt="" height="22px"
+              width="22px">
+            <span>YouTube Kids</span>
+          </div>
+          <div title="YouTube TV" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-right/youtube-apps/youtubeTV.png" alt="" height="22px"
+              width="22px">
+            <span>YouTube TV</span>
+          </div>
+        </section>
+        <section class="column">
+          <div title="Settings" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-left-open/settings.png" alt="" height="22px" width="22px">
+            <span>Settings</span>
+          </div>
+          <div title="Report History" class="menu-open-home">
+            <img class="menu-open-image" src="icons/video-player-icons/report.png" alt="" height="22px" width="22px">
+            <span>Report History</span>
+          </div>
+          <div title="Help" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-right/account-icons/help.png" alt="" height="22px"
+              width="22px">
+            <span>Help</span>
+          </div>
+          <div title="Send feedback" class="menu-open-home">
+            <img class="menu-open-image" src="icons/nav-icons-right/account-icons/sendFeedback.png" alt="" height="22px"
+              width="22px">
+            <span>Send feedback</span>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="about">
+            <a href="#">About</a>
+            <a href="#">Press</a>
+            <a href="#">Copyright</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Creators</a>
+            <a href="#">Advertise</a>
+            <a href="#">Developers</a>
+          </div>
+          <div class="terms">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Policy & Safety</a>
+            <a href="#">How Youtube Works</a>
+            <a href="#">Test New Features</a>
+          </div>
 
+          <div class="copyright"> &#169; 2022 Copyright</div>
+        </footer>
+      </aside>
 
       <div title="YouTube Home" class="nav-youtube-homepage">
         <a href="index.html">
@@ -49,6 +218,7 @@
     <div class="search-bar">
       <input type="text" placeholder="Search" />
       <button class="btn-search">
+        <img src="icons/search/searchbar.png" alt="" height="24px" width="24px" />
         <div class="search">Search</div>
       </button>
       <div class="voice-menu">
@@ -97,7 +267,9 @@
       <div class="notifications-menu">
         <div class="top">
           <span>Notifications</span>
-          <img src="icons/nav-icons-right/account-icons/settings.png" alt="" height="32px" width="32px" />
+          <div class="notification-settings">
+            <img src="icons/nav-icons-right/account-icons/settings.png" alt="" height="22px" width="22px" />
+          </div>
         </div>
         <div class="bottom">
           <img src="icons/nav-icons-right/notifications.png" alt="" height="120px" width="120px" />
@@ -213,177 +385,68 @@
           </div>
         </div>
       </div>
+
+
+
   </nav>
 
-  <div class="main-menu-open">
-    <div class="column">
-      <div title="Home" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-closed/home.png" alt="" height="22px" width="22px">
-        <span>Home</span>
-      </div>
-      <div title="Shorts" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-closed/shorts.png" alt="" height="22px" width="22px">
-        <span>Shorts</span>
-      </div>
-      <div title="Subscriptions" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-closed/subscriptions.png" alt="" height="22px"
-          width="22px">
-        <span>Subscriptions</span>
-      </div>
+  <div class="content-container">
+    <div class="browse-content">
+      <span>All</span>
     </div>
-    <div class="column">
-      <div title="Library" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-closed/library.png" alt="" height="22px" width="22px">
-        <span>Library</span>
-      </div>
-      <div title="History" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/history.png" alt="" height="22px" width="22px">
-        <span>History</span>
-      </div>
-      <div title="Your Videos" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/yourvideos.png" alt="" height="22px" width="22px">
-        <span>Your Videos</span>
-      </div>
-      <div title="Watch Later" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/watchlater.png" alt="" height="22px" width="22px">
-        <span>Watch Later</span>
-      </div>
-      <div title="Watch Library" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/watchlibrary.png" alt="" height="22px"
-          width="22px">
-        <span>Watch Library</span>
-      </div>
-      <div title="Liked Videos" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/likedvideos.png" alt="" height="22px" width="22px">
-        <span>Liked Videos</span>
-      </div>
+    <div class="browse-content">
+      <span>HTML</span>
     </div>
-    <div class="column | subscribed-channels">
-      <h1 class="subscribed-channels-title">Subscriptions</h1>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/1.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/2.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/3.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/4.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/5.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/6.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Subscribed Channel" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/7.png" alt="" height="22px" width="22px">
-        <span>Lorem Ipsum</span>
-      </div>
-      <div title="Show more" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/subscriptions/showMore.png" alt="" height="22px" width="22px">
-        <span>Show more</span>
-      </div>
+    <div class="browse-content">
+      <span>CSS</span>
     </div>
-    <div class="column">
-      <h1 class="explore-channels-title">Explore</h1>
-      <div title="Trending" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/trending.png" alt="" height="22px" width="22px">
-        <span>Trending</span>
-      </div>
-      <div title="Music" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/music.png" alt="" height="22px" width="22px">
-        <span>Music</span>
-      </div>
-      <div title="Gaming" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/gaming.png" alt="" height="22px" width="22px">
-        <span>Gaming</span>
-      </div>
-      <div title="Sports" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/sports.png" alt="" height="22px" width="22px">
-        <span>Sports</span>
-      </div>
+    <div class="browse-content">
+      <span>Javascript</span>
     </div>
-    <div class="column">
-      <h1 class="more-from-youtube-title">More from YouTube</h1>
-      <div title="YouTube Premium" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-right/youtube-apps/youtubePremium.png" alt="" height="22px"
-          width="22px">
-        <span>YouTube Premium</span>
-      </div>
-      <div title="Creator Studio" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/creatorStudio.png" alt="" height="22px"
-          width="22px">
-        <span>Creator Studio</span>
-      </div>
-      <div title="YouTube Music" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/creatorMusic.png" alt="" height="22px"
-          width="22px">
-        <span>YouTube Music</span>
-      </div>
-      <div title="YouTube Kids" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-right/youtube-apps/youtubeKids.png" alt="" height="22px"
-          width="22px">
-        <span>YouTube Kids</span>
-      </div>
-      <div title="YouTube TV" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-right/youtube-apps/youtubeTV.png" alt="" height="22px"
-          width="22px">
-        <span>YouTube TV</span>
-      </div>
+    <div class="browse-content">
+      <span>Front-End Development</span>
     </div>
-    <div class="column">
-      <div title="Settings" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-left-open/settings.png" alt="" height="22px" width="22px">
-        <span>Settings</span>
-      </div>
-      <div title="Report History" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/video-player-icons/report.png" alt="" height="22px" width="22px">
-        <span>Report History</span>
-      </div>
-      <div title="Help" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-right/account-icons/help.png" alt="" height="22px"
-          width="22px">
-        <span>Help</span>
-      </div>
-      <div title="Send feedback" class="menu-open-home">
-        <img class="menu-open-image" src="/icons/nav-icons-right/account-icons/sendFeedback.png" alt="" height="22px"
-          width="22px">
-        <span>Send feedback</span>
-      </div>
+    <div class="browse-content">
+      <span>Mixes</span>
     </div>
-    <div class="footer">
-      <div class="about">
-        <a href="#">About</a>
-        <a href="#">Press</a>
-        <a href="#">Copyright</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Creators</a>
-        <a href="#">Advertise</a>
-        <a href="#">Developers</a>
-      </div>
-      <div class="terms">
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-        <a href="#">Policy & Safety</a>
-        <a href="#">How Youtube Works</a>
-        <a href="#">Test New Features</a>
-      </div>
-
-      <div class="copyright">	&#169; 2022 Copyright</div>
+    <div class="browse-content">
+      <span>Music</span>
+    </div>
+    <div class="browse-content">
+      <span>Gaming</span>
+    </div>
+    <div class="browse-content">
+      <span>This</span>
+    </div>
+    <div class="browse-content">
+      <span>Was</span>
+    </div>
+    <div class="browse-content">
+      <span>Really</span>
+    </div>
+    <div class="browse-content">
+      <span>Fun to make</span>
+    </div>
+    <div class="browse-content">
+      <span>I have learned</span>
+    </div>
+    <div class="browse-content">
+      <span>A lot</span>
+    </div>
+    <div class="browse-content">
+      <span>Lorem Ipsum</span>
+    </div>
+    <div class="browse-content">
+      <span>Dolor sit</span>
     </div>
 
 
+  </div>
 
-    <script src="script.js"></script>
+  <div class="wrapper">
+    
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
